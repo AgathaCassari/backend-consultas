@@ -1,10 +1,10 @@
-# 🏥 Backend Consultas
+# Backend Consultas
 
 API REST desenvolvida com **Spring Boot** para gerenciamento de consultas médicas, permitindo o cadastro e gerenciamento de pacientes, médicos, especialidades e consultas.
 
 ---
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - ✅ CRUD completo de **Pacientes**
 - ✅ CRUD completo de **Médicos**
@@ -16,7 +16,7 @@ API REST desenvolvida com **Spring Boot** para gerenciamento de consultas médic
 
 ---
 
-## 🛠 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - Java 17
 - Spring Boot
@@ -29,7 +29,7 @@ API REST desenvolvida com **Spring Boot** para gerenciamento de consultas médic
 
 ---
 
-## 📂 Estrutura do projeto
+## Estrutura do projeto
 
 ```
 src
@@ -43,7 +43,7 @@ src
 
 ---
 
-## ▶️ Como executar o projeto
+## Como executar o projeto
 
 ### 1. Clone o repositório
 
@@ -83,7 +83,7 @@ mvnw.cmd spring-boot:run
 
 ---
 
-## 🌐 Endereço da API
+## Endereço da API
 
 Após iniciar a aplicação, ela estará disponível em:
 
@@ -93,9 +93,9 @@ http://localhost:8080
 
 ---
 
-# 📌 Endpoints
+# Endpoints
 
-## 👤 Pacientes
+## Pacientes
 
 | Método | Endpoint |
 |---------|----------|
@@ -107,7 +107,7 @@ http://localhost:8080
 
 ---
 
-## 👨‍⚕️ Médicos
+## Médicos
 
 | Método | Endpoint |
 |---------|----------|
@@ -119,7 +119,7 @@ http://localhost:8080
 
 ---
 
-## 🩺 Especialidades
+## Especialidades
 
 | Método | Endpoint |
 |---------|----------|
@@ -131,7 +131,7 @@ http://localhost:8080
 
 ---
 
-## 📅 Consultas
+## Consultas
 
 | Método | Endpoint |
 |---------|----------|
@@ -143,7 +143,7 @@ http://localhost:8080
 
 ---
 
-## 🧪 Testando a API
+## Testando a API
 
 Os endpoints podem ser testados utilizando:
 
@@ -159,7 +159,7 @@ curl http://localhost:8080/consultas
 
 ---
 
-## 🗄 Banco de dados
+## Banco de dados
 
 O projeto utiliza o banco de dados **H2** em memória.
 
@@ -179,7 +179,7 @@ src/main/resources/application.properties
 
 ---
 
-## 📋 Observações
+## Observações
 
 - O backend deve estar em execução para que o aplicativo mobile consiga consumir a API.
 - O banco de dados é recriado automaticamente durante a execução da aplicação.
@@ -187,8 +187,6 @@ src/main/resources/application.properties
 
 ---
 
-## 👩‍💻 Autora
+## Autora
 
 **Agatha Cassari Benedicto**
-
-Projeto desenvolvido para a disciplina de Desenvolvimento Mobile da **FIAP**.
