@@ -34,6 +34,7 @@ public class Paciente {
         this.ativo = ativo;
     }
     public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; } // ← ADICIONADO
     public String getNome() { return nome; }
     public String getCpf() { return cpf; }
     public String getEmail() { return email; }
