@@ -1,45 +1,91 @@
-# Backend Consultas
+# 🏥 Backend Consultas
 
-API REST desenvolvida com Spring Boot para gerenciamento de pacientes e especialidades médicas.
+API REST desenvolvida com **Spring Boot** para gerenciamento de consultas médicas, permitindo o cadastro e gerenciamento de pacientes, médicos, especialidades e consultas.
 
 ---
 
 ## 🚀 Funcionalidades
 
-* CRUD completo de **Pacientes**
-* CRUD completo de **Especialidades**
-* Integração com banco de dados H2
-* Arquitetura em camadas (Controller, Service, Repository, Model)
+- ✅ CRUD completo de **Pacientes**
+- ✅ CRUD completo de **Médicos**
+- ✅ CRUD completo de **Especialidades**
+- ✅ CRUD completo de **Consultas**
+- ✅ Integração com banco de dados H2
+- ✅ API REST seguindo boas práticas de desenvolvimento
+- ✅ Arquitetura em camadas (Controller, Service, Repository e Model)
 
 ---
 
 ## 🛠 Tecnologias utilizadas
 
-* Java
-* Spring Boot
-* Spring Data JPA
-* Hibernate
-* H2 Database
+- Java 17
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- Hibernate
+- Maven
+- H2 Database
+- Jackson
+
+---
+
+## 📂 Estrutura do projeto
+
+```
+src
+ ├── controller
+ ├── service
+ ├── repository
+ ├── model
+ ├── resources
+ └── BackendConsultasApplication.java
+```
 
 ---
 
 ## ▶️ Como executar o projeto
 
-1. Clone o repositório:
+### 1. Clone o repositório
 
+```bash
+git clone https://github.com/AgathaCassari/backend-consultas.git
 ```
-git clone https://github.com/AgathaCassari/backend-consultas
+
+### 2. Entre na pasta do projeto
+
+```bash
+cd backend-consultas
 ```
 
-2. Abra o projeto no VS Code ou IntelliJ
+### 3. Abra o projeto
 
-3. Execute a classe:
+Abra o projeto utilizando o **IntelliJ IDEA** ou **Visual Studio Code**.
+
+### 4. Execute a aplicação
+
+Execute a classe principal:
 
 ```
 BackendConsultasApplication
 ```
 
-4. A aplicação estará disponível em:
+ou pelo terminal:
+
+```bash
+./mvnw spring-boot:run
+```
+
+No Windows:
+
+```bash
+mvnw.cmd spring-boot:run
+```
+
+---
+
+## 🌐 Endereço da API
+
+Após iniciar a aplicação, ela estará disponível em:
 
 ```
 http://localhost:8080
@@ -47,68 +93,102 @@ http://localhost:8080
 
 ---
 
-## 📌 Endpoints da API
+# 📌 Endpoints
 
-### 👤 Pacientes
+## 👤 Pacientes
 
-* GET → listar todos
-  http://localhost:8080/pacientes
-
-* GET → buscar por ID
-  http://localhost:8080/pacientes/{id}
-
-* POST → criar
-  http://localhost:8080/pacientes
-
-* PUT → atualizar
-  http://localhost:8080/pacientes/{id}
-
-* DELETE → remover
-  http://localhost:8080/pacientes/{id}
+| Método | Endpoint |
+|---------|----------|
+| GET | `/pacientes` |
+| GET | `/pacientes/{id}` |
+| POST | `/pacientes` |
+| PUT | `/pacientes/{id}` |
+| DELETE | `/pacientes/{id}` |
 
 ---
 
-### 🩺 Especialidades
+## 👨‍⚕️ Médicos
 
-* GET → listar todas
-  http://localhost:8080/especialidades
+| Método | Endpoint |
+|---------|----------|
+| GET | `/medicos` |
+| GET | `/medicos/{id}` |
+| POST | `/medicos` |
+| PUT | `/medicos/{id}` |
+| DELETE | `/medicos/{id}` |
 
-* GET → buscar por ID
-  http://localhost:8080/especialidades/{id}
+---
 
-* POST → criar
-  http://localhost:8080/especialidades
+## 🩺 Especialidades
 
-* PUT → atualizar
-  http://localhost:8080/especialidades/{id}
+| Método | Endpoint |
+|---------|----------|
+| GET | `/especialidades` |
+| GET | `/especialidades/{id}` |
+| POST | `/especialidades` |
+| PUT | `/especialidades/{id}` |
+| DELETE | `/especialidades/{id}` |
 
-* DELETE → remover
-  http://localhost:8080/especialidades/{id}
+---
+
+## 📅 Consultas
+
+| Método | Endpoint |
+|---------|----------|
+| GET | `/consultas` |
+| GET | `/consultas/{id}` |
+| POST | `/consultas` |
+| PUT | `/consultas/{id}` |
+| DELETE | `/consultas/{id}` |
+
+---
+
+## 🧪 Testando a API
+
+Os endpoints podem ser testados utilizando:
+
+- Postman
+- Insomnia
+- cURL
+
+Exemplo:
+
+```bash
+curl http://localhost:8080/consultas
+```
 
 ---
 
 ## 🗄 Banco de dados
 
-O projeto utiliza o banco H2 local.
+O projeto utiliza o banco de dados **H2** em memória.
 
-O banco é criado automaticamente ao rodar a aplicação.
+O banco é criado automaticamente ao iniciar a aplicação.
 
-Para acessar o console H2:
+Console H2:
 
 ```
 http://localhost:8080/h2-console
 ```
 
+As configurações de conexão estão definidas no arquivo:
+
+```
+src/main/resources/application.properties
+```
+
 ---
 
-## 📎 Observações
+## 📋 Observações
 
-* O projeto deve ser executado localmente para que os endpoints funcionem
-* O banco de dados é gerado automaticamente na execução
-* Estrutura organizada seguindo boas práticas de desenvolvimento
+- O backend deve estar em execução para que o aplicativo mobile consiga consumir a API.
+- O banco de dados é recriado automaticamente durante a execução da aplicação.
+- Recomenda-se utilizar o Postman ou cURL para validar os endpoints da API.
 
 ---
 
 ## 👩‍💻 Autora
 
-Agatha Cassari Benedicto
+**Agatha Cassari Benedicto**
+
+Projeto desenvolvido para a disciplina de Desenvolvimento Mobile da **FIAP**.
